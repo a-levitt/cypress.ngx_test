@@ -35,6 +35,8 @@ testem.log
 # e2e
 /e2e/*.js
 /e2e/*.map
+/cypress/e2e/1-getting-started
+/cypress/e2e/2-advanced-examples
 
 # System Files
 .DS_Store
