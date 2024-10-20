@@ -7,7 +7,13 @@ describe('First test suit', () => {
     cy.contains('Forms').click();
     cy.contains('Form Layouts').click();
 
-    cy.get('#inputEmail1').type('Hello');
+    cy.get('#inputEmail3')
+          .parents('form')
+          .find('button')
+          .should('contain', 'Sign in')
+          .parents('form')
+          .find('nb-checkbox')
+          .click()
 
   })
 
